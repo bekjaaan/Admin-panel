@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Active</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+    <header>
+        <nav style="box-shadow: 0px 0px 5px 0px black;" class="col-xl-12 navbar navbar-expand-lg bg-light d-flex">
+            <div class="container-fluid"> 
+              <a style="font-weight: 500;" class="navbar-brand d-flex" href="#">TailStack</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                
+                <form style="margin-left: 35%;" class="d-flex" role="search">
+                  <input style="width: 500px;" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                      
+                       <!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+    Sign up
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputIsm1" class="form-label">Ism</label>
+                  <input type="Ism" class="form-control" id="inp3" aria-describedby="IsmHelp">
+                  <div id="IsmHelp" class="form-text">Ismni to'liq kiriting.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputFamilya1" class="form-label">Familya</label>
+                    <input type="Familya" class="form-control" id="inp4" aria-describedby="FamilyaHelp">
+                    <div id="FamilyaHelp" class="form-text">Familyani to'liq kiriting.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail2" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inp5" aria-describedby="emailHelp">
+                    <div id="emailHelp1" class="form-text">E-pochtangizni hech kim bilan baham ko'rmaymiz.</div>
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Login</label>
+                  <input type="Password" class="form-control" id="inp6">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Parol</label>
+                    <input type="password" class="form-control" id="inp7">
+                  </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div class="w-100 d-flex justify-content-center">
+                <button onclick="yoz2()" type="button" class="btn btn-primary">Submit</button>
+            </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+                    </li>
+                  </ul>
+                  <!-- Button trigger modal -->
+<button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+
+    Login
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="inp1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inp2">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <h1 id="h1"></h1>
+                <div class="w-100 d-flex justify-content-center">
+                <button onclick="yoz()" type="button" class="btn btn-primary">Submit</button>
+            </div>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main style="width: 100%; height: 87vh; display:inline-block;">
+       <div class="container-fluid">
+        <div class="row">
+
+            <div style="height: 100vh;" class="col-xl-3 bg-dark d-flex">
+                <div class="col-xl-12 d-flex flex-column" style="background-color: black; height: 60px;">
+                    <div class="d-flex">
+                        <img style="border-radius: 100px; width: 60px;" class="img-fluid" src="brat1.jpg" alt="">
+                        <div class="ms-5">
+                            <span class="text-light">Adrian Demian</span><br>
+                            <span style="font-size: 10pt;" class="text-light">ACCAUNT MANAGER</span>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex  d-flex mt-3">
+                        
+                       <ul class="list-unstyled">
+                            <li style="color: gray;">Demos</li>
+                            
+                            <li class="text-light mt-2"><i class="fa-solid fa-tv"></i>Admin</li>
+                            <li class="text-light mt-1"> <i class="fa-duotone fa-bag-shopping"></i>Enterprise</li>
+                            <li class="text-light mt-1">Staff</li>
+                            <li class="text-light mt-1">Crm</li>
+                            <li class="text-light mt-1">Mini</li>
+                            <li class="text-light mt-1">Fixed</li>
+                        </ul>
+                    </div> 
+                    <div class="d-flex d-flex mt-2">
+                        
+                        <ul class="list-unstyled">
+                             <li style="color: gray;">UI COMPONENTS</li>
+                             
+                             <li class="text-light mt-1">Buttons</li>
+                             <li class="text-light mt-1">Alerts</li>
+                             <li class="text-light mt-1">Avatars</li>
+                             <li class="text-light mt-1">Modals</li>
+                             <li class="text-light mt-1">Charts</li>
+                             <li class="text-light mt-1">Icons</li>
+                             <li class="text-light mt-1">Forms</li>
+                             <li class="text-light mt-1">Time & Date</li>
+                             <li class="text-light mt-1">Tables</li>
+                             <li class="text-light mt-1">Tabs</li>
+                             <li class="text-light mt-1">Loaders</li>
+                             <li class="text-light mt-1">Drag & Drop</li>
+                         </ul>
+                     </div> 
+                </div>
+                
+            </div>
+
+            <div class="col-xl-9">
+                <div class="col-xl-12 bg-danger p-2 text-dark bg-opacity-10 mt-2">
+                    <i class="fa-solid fa-circle-exclamation text-warning"></i>
+                    <span style="font-weight: 600;">API geteways are now Offline.</span>
+                    <span>Please try the Api later.If you want to stay up to date follow our</span>
+                    <span><a style="text-decoration: none;" href="#">Status Page</a></span>
+                </div>
+                <div class="col-xl-12 d-flex mt-2">
+                    <div style="width: 32%; box-shadow: 0px 3px 10px 0px black;" class="col-xl-4 bg-light d-flex">
+                        <div class="d-flex flex-column ">
+                        <span>Current target</span>
+                        <span>$12,920</span>
+                        <span class="text-success">31.5%</span>
+                        </div>
+                        <div class="d-flex  w-50 justify-content-end align-items-center">
+                        <i class="fa-solid fa-location-crosshairs me-4 fs-1 text-info "></i>
+                        </div>
+                    </div>
+                    <div style="width: 32%; box-shadow: 0px 3px 10px 0px black;" class="col-xl-4 bg-light d-flex ms-1">
+                        <div class="d-flex flex-column ">
+                            <span>Earnings</span>
+                            <span>$3,642</span>
+                            <span class="text-success">51.5%</span>
+                            </div>
+                            <div class="d-flex w-50 justify-content-end align-items-center">
+                                <i class="fa-solid fa-dollar-sign fs-1 text-success"></i>
+                            </div>
+                    </div>
+                    <div style="width: 35%; height: 15vh; box-shadow: 0px 3px 10px 0px black;" class="col-xl-4 bg-light d-flex ms-1">
+                        <div class="d-flex flex-column ">
+                            <span>Website Traffic</span>
+                            <span>$8,391</span>
+                            <span class="text-warning">3.5%</span>
+                            </div>
+                            <div class="d-flex  w-50 justify-content-end align-items-center">
+                                <i class="fa-regular fa-id-badge fs-1"></i>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-xl-12 mt-3 h-75 d-flex">
+                    <div class="col-xl-8 ">
+                        <div class="col-xl-8 " style="width: 97%; height: 43vh; box-shadow: 0px 3px 10px 0px black;">
+                          <img class="img-fluid" style="background-size: cover; width: 100%; height: 43vh;" src="./Безымянный.png" alt="">
+                        </div>
+
+                        <div class="col-xl-8  bg-light mt-2" style="width: 97%; height: 30vh; box-shadow: 0px 3px 10px 0px black;">
+                            <div class="col-xl-12">
+                                <h4>Recent Clients</h4>
+                            </div>
+                            <div class="col-xl-12 d-flex align-items-center mt-2">
+                                <i class="fa-solid fa-id-card-clip fs-3 text-info"></i>
+                                <span class="ms-3">Janall D.Metney</span>
+                                <span class="ms-5">Jim & Car Ent</span>
+                                <div class="ms-4">
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star text-warning"></i>
+                                <i class="fa-solid fa-star "></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 d-flex align-items-center mt-3">
+                                <i class="fa-solid fa-dollar-sign fs-1 text-info"></i>
+                                <span class="ms-3">Sherri J.Cardenas</span>
+                                <span class="ms-5">Shoe LTD</span>
+                                <div class="ms-5">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star "></i>
+                                </div>
+                            </div>
+                            <div class="col-xl-12 d-flex  mt-3">
+                                <i class="fa-solid fa-dollar-sign fs-1 text-info"></i>
+                                <span class="ms-3">Joseph S.Ferland</span>
+                                <span class="ms-5">RODE LLC</span>
+                                <div class="ms-5">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star "></i>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                <div class="col-xl-4" style="height: 70vh;">
+                   <img style="width: 100%; height: 70vh; box-shadow: 0px 3px 10px 0px black;" class="img-fluid" src="salom.png" alt="">
+                </div>
+               </div>
+            </div>
+        </div>
+       </div>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="style.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+   </body>
+</html>
